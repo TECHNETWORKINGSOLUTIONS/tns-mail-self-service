@@ -1,0 +1,3 @@
+
+@tailwind base;@tailwind components;@tailwind utilities;
+@layer components{.input{@apply w-full bg-[#3a3a55] text-tnsink border border-white/20 rounded-lg px-3 py-2;} .btn{@apply inline-flex items-center gap-2 bg-tnsaccent hover:bg-tnsaccent2 text-white px-4 py-2 rounded-lg font-semibold;} .output{@apply bg-black/70 border border-white/10 rounded-lg mt-2 p-3 whitespace-pre-wrap max-height-[320px] overflow-auto;}}
