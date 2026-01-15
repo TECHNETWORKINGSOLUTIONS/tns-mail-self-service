@@ -2,8 +2,12 @@
 # build stage
 FROM node:20-alpine as build
 WORKDIR /app
+
+# 1) Install ALL deps (including dev) so vite/tailwind are available to build
 COPY package*.json ./
-RUN npm install --omit=dev --legacy-peer-deps
+RUN npm install
+
+# 2) Build the React app
 COPY . .
 RUN npm run build
 
