@@ -1,0 +1,19 @@
+
+@tailwind base;@tailwind components;@tailwind utilities;
+@layer components{
+  .input{@apply w-full bg-[#2b2d3a] text-tnsink border border-white/10 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-tnsaccent/60;}
+  .btn{@apply inline-flex items-center gap-2 bg-tnsaccent hover:bg-tnsaccent2 text-white px-4 py-2 rounded-lg font-semibold transition-colors;}
+  .btn-ghost{@apply inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-tnsink px-3 py-2 rounded-lg;}
+  .card{@apply bg-[#1f2230] border border-white/10 rounded-xl p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.02)_inset];}
+  .section-title{@apply text-sm uppercase tracking-wider text-tnsmuted;}
+  .tile{@apply bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-3 cursor-pointer transition-colors;}
+  .seg{@apply inline-flex rounded-lg overflow-hidden border border-white/10;}
+  .seg > button{@apply px-3 py-1.5 text-sm text-tnsink bg-transparent hover:bg-white/10;}
+  .seg > button[aria-pressed="true"]{@apply bg-tnsaccent text-white;}
+  .toggle{@apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors;}
+  .toggle-on{@apply bg-tnsaccent;}
+  .toggle-off{@apply bg-white/20;}
+  .dot{@apply inline-block h-5 w-5 transform rounded-full bg-white transition;}
+  .dot-on{@apply translate-x-5;}
+  .dot-off{@apply translate-x-1;}
+}

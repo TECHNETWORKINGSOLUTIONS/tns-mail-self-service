@@ -1,0 +1,4 @@
+
+// Add to your Layout.jsx header (import and place <UserMenu/> on the right):
+// import UserMenu from './UserMenu.jsx'
+// ... inside the header or top bar container: <UserMenu />
